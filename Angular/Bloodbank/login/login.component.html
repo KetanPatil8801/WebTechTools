@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="form-module">
+                <label>Usename</label>
+                <br>
+                <input type="text" name="username" placeholder="Enter Username" [(ngModel)]='username' required />
+            </div>
+            <br><br><br><br><br><br>
+            <div class="form-module">
+                <label>Password</label>
+                <br>
+                <input type="text" name="password" placeholder="Enter Password" [(ngModel)]='password' required />
+            </div>
+            <br><br>
+            <button class="login" (click)="Login()">Login</button>
+            <br>
+            <button class="register" (click)="Register()">Don't have account? Create One</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

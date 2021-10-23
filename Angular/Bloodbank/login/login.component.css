@@ -1,0 +1,65 @@
+
+
+.container{
+  position: absolute;
+ background-color: rgba(0, 0, 0, 0.815);
+  top:200px;
+  left:550px;
+  width:430px;
+  height:380px;
+  border: 10px solid blueviolet;
+  border-radius: 5px;
+  border-width: thick;
+  color: white;
+}
+
+label{
+  font-size: 30px;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+  position: absolute;
+}
+
+.container input {
+  margin-top: 70px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+  width:350px;
+  height: 30px;
+  position: absolute;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.568);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: gray;
+
+}
+
+.login{
+  position: absolute;
+  background-color: transparent;
+  border: 3px solid blueviolet;
+  top:287px;
+  left:110px;
+  width: 210px;
+  height: 45px;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  border-radius: 30px;
+}
+
+.register{
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  top:346px;
+  left:140px;
+  cursor: pointer;
+  color:  blueviolet;
+  font-size: 10px;
+
+}
+
