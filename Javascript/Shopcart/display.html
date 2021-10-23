@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            display
+        </title>
+       
+        <style>
+            body{
+                background-image: url(food.jpg);
+                background-size: cover;}
+            
+            #t01{
+                width: 50%;
+                display: none;
+                background-color: rgb(236, 208, 165);
+                /* border:black; */
+                padding: 100px;
+                /* border-color: rgb(32, 7, 71); */
+                border-collapse: collapse;
+                position: absolute;
+                top:   45%;
+                left: 22%;
+                }
+            table,tr,th,td{
+                border:1px solid black;
+                text-align: center;
+            }
+            #btn{
+                position: absolute;
+                top: 30%;
+                left: 35%;
+                background-color: rgb(48, 20, 20);
+                color: rgb(224, 186, 186);
+                font-family: Arial;
+                font-size: 20px;
+                padding: 10px 120px;
+            }
+            #btn1{
+                position: absolute;
+                top: 88%;
+                left: 38%;
+                display: none;
+                background-color: rgb(219, 182, 182);
+                color: black;
+                font-family: Arial;
+                font-size: 20px;
+                padding: 10px 120px;
+            }
+        </style>
+        <center> <h1 style="color: blue;">WELCOME TO RMART</h1></center>
+         <script >
+             function enable(){
+    var content=document.getElementById("t01");
+    var x=document.getElementById("btn1");
+    content.style.display ="table";
+    x.style.display="block";
+}
+function proceed() {
+    var content=document.getElementById("t01");
+    var bill=0;
+    for (var i = 1, row; row = content.rows[i]; i++)
+            {
+                   var a=row.cells[2];                    
+                   a=a.innerHTML;
+                   a=parseFloat(a);
+                   // console.log(a);
+                   var b=document.getElementById(i).value;
+                   // console.log(b);
+                    b=parseFloat(b);
+                    bill=bill+a*b;
+             }
+             bill=bill+(0.18*bill)+(0.05*bill);
+                console.log(bill);
+                // location.href="bill.html";
+              //  document.write("amt",""+bill);
+                sessionStorage.setItem("amt",""+bill);
+                window.location.href="bill.html";
+               //<a href="bill.html"></a>
+                console.log(l);
+            }
+         </script>
+    </head>
+    <body>
+        
+        <!-- <center><input type="button" value="Display" onclick="enable()"></center><br><br> -->
+        <center><button style="margin-bottom: 120px" id="btn" onclick="enable()">DISPLAY ALL THE ITEMS</button></center>
+            <center>
+                <table style="width:50%" id="t01">
+                    <tr>
+                        <th>Item Name</th>
+                        <th>Availability(kgs)</th>
+                        <th>Price_per_kg</th>
+                        <th>Select Quantity</th>
+                    </tr>
+                    <tr>
+                        <td><center>APPLE</center></td>
+                        <td><center>100</center></td>
+                        <td>60</td>
+                        <td><center><input id="1" type="number" min="0" max="10" value="0" placeholder="0"></center></td>
+                    </tr>
+                    <tr>
+                        <td><center>BANANAS</center></td>
+                        <td><center>100</center></td>
+                        <td>70</td>
+                        <td><center><input id="2" type="number" min="0" max="10" value="0" placeholder="0"></center></td>
+                    </tr>
+                    <tr>
+                        <td><center>ONIONS</center></td>
+                        <td><center>20</center></td>
+                        <td>5</td>
+                        <td><center><input id="3" type="number" min="0" max="20" value="0" placeholder="0"></center></td>
+                    </tr>
+                    <tr>
+                        <td><center>TOMATOES</center></td>
+                        <td><center>20</center></td>
+                        <td>15</td>
+                        <td><center><input id="4" type="number" min="0" max="22" value="0" placeholder="0"></center></td>
+                    </tr>
+                    <tr>
+                        <td><center>CAPSICUM</center></td>
+                        <td><center>100</center></td>
+                        <td>50</td>
+                        <td><center><input id="5" type="number" min="0" max="22" value="0" placeholder="0"></center></td>
+                    </tr>
+                    <tr>
+                        <td><center>RAJMA</center></td>
+                        <td><center>20</center></td>
+                        <td>15</td>
+                        <td><center><input id="6" type="number" min="0" max="22" value="0" placeholder="0"></center></td>
+                    </tr>
+                    <tr>
+                        <td><center>TOORDAL</center></td>
+                        <td><center>20</center></td>
+                        <td>15</td>
+                        <td><center><input id="7" type="number" min="0" max="22" value="0" placeholder="0"></center></td>
+                    </tr>
+                    <tr>
+                        <td><center>CORIANDER</center></td>
+                        <td><center>20</center></td>
+                        <td>15</td>
+                        <td><center><input id="8" type="number" min="0" max="22" value="0" placeholder="0"></center></td>
+                    </tr>
+                </table> 
+                <br>
+            </center>
+            <br><br>
+             <center><button type="button" id="btn1" onclick="proceed()" >Proceed to Pay</button></center>   
+           
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Bill</title>
+    <style>
+        body{
+            background-color: rgb(226, 201, 169);
+        }
+    </style>
+    </style>
+</head>
+<body>
+   <center><p>Thank Your For Shopping With Us!</p>
+    The total amount to be paid is :
+    <p id="xx"></p>
+    <script>
+        
+         billamt=sessionStorage.getItem("amt");
+         document.getElementById("xx").innerHTML=billamt;
+    </script>
+    </center> 
+</body>
+</html>
