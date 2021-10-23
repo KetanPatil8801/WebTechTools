@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donation Page</title>
+</head>
+
+<body>
+    <div>
+        <div class="container">
+            <div class="box">
+                <br><br><br><br>
+                <h1>Donation Check Form</h1>
+                <form class="my-form">
+                    <div class="form-module">
+                        <label for="a">No recent donation before 90 days :</label>
+                        <input type="text" name="a" id="a" placeholder="Yes/No" [(ngModel)]='a' required />
+                    </div>
+                    <div class="form-module">
+                        <label for="b">No recent donation before 90 days :</label>
+                        <input type="text" name="b" id="b" placeholder="Yes/No" [(ngModel)]='b' required />
+                    </div>
+                    <div class="form-module">
+                        <label for="c">No recent donation before 90 days :</label>
+                        <input type="text" name="c" id="c" placeholder="Yes/No" [(ngModel)]='c' required />
+                    </div>
+                    <div class="form-module">
+                        <label for="d">No recent donation before 90 days :</label>
+                        <input type="text" name="d" id="d" placeholder="Yes/No" [(ngModel)]='d' required />
+                    </div>
+
+                    <div class="button-module">
+                        <button class="my-button" (click)="Donate()">Donate</button>&nbsp;&nbsp;
+                        <button class="my-button" (click)="History()">Userhistory</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
