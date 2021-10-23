@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User History</title>
+</head>
+
+<body>
+    <div class="block">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>User History</h1>
+        <br>
+        <ul *ngFor="let i of users">
+            <li>{{i.username}}</li>
+            <br>
+        </ul>
+        <br><br>
+        <button class="my-button" (click)="Login()">Go to Login Page</button>
+    </div>
+</body>
+
+</html>
