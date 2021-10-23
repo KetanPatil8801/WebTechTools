@@ -1,0 +1,79 @@
+html {
+    background-color:rgba(128, 128, 128, 0.836);
+  }
+  
+  .container {
+    color: #222;
+  }
+  
+  #main-header {
+    border-radius: 2px;
+    background-color: rgb(197, 66, 43);
+    color: #fff;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 2px;
+    width: 700px;
+    position: relative;
+    left:400px
+  }
+  
+  .my-form {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    align-content: center;
+    left: 100px;
+  }
+
+  .c{
+      left:100px;
+  }
+  
+  .form-module {
+    margin-bottom: 20px;
+    padding-left: 10px;
+    align-items: center;
+    align-content: center;
+    left: 135px;
+    position: relative;
+    padding-top: 30px;
+
+  }
+  .form-module label {
+    display: block;
+    margin-bottom: 5px;
+    align-items: center;
+    align-content: center;
+    font-weight: bolder;
+  }
+  
+  .form-module input {
+    width: 60%;
+    height: 20px;
+    align-items: center;
+    align-content: center;
+  }
+  
+  .button-module {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: 270px;
+    padding-top: 30px;
+  }
+  .my-button {
+    background-color: rgb(197, 66, 43);
+    color: #fff;
+    border-radius: 2px;
+    border: none;
+    padding: 5px 10px;
+  }
+
+  .box{
+      width:700px;
+      height:700px;
+      background-color: aquamarine;
+      position: relative;
+      left:400px;
+  }
