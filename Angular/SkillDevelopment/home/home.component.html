@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillDev</title>
+  </head>
+  <body>
+    <div class="container">
+      <header id="main-header">
+        <h1>Select your Courses</h1>
+      </header>
+      <div class="figure-block">
+        <figure class="figures" *ngFor="let skill of skills">
+          <img [src]="skill.image" alt="Skill image" />
+          <figcaption>
+            <button class="my-button" (click)="addskill(skill.name)">
+              Add {{ skill.name }}
+            </button>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="username-block">
+        <label for="username">Enter username again :&nbsp;</label>
+        <input
+          type="text"
+          name="username"
+          placeholder="username"
+          [(ngModel)]="username"
+        /><br />
+      </div>
+
+      <button class="my-button" (click)="enroll()">
+        Enroll selected Courses</button
+      >&nbsp;&nbsp;
+
+      <button class="my-button" (click)="showhistory()">
+        Check User history
+      </button>
+
+      <ul>
+        Skills Selected
+        <li *ngFor="let skill of userskills">{{ skill }}</li>
+      </ul>
+    </div>
+  </body>
+</html>

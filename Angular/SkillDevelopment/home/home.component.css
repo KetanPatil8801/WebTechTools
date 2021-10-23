@@ -1,0 +1,45 @@
+.container {
+  background-color: #f4f4f4;
+  color: #222;
+  width: 100%;
+  /* margin: 0; */
+}
+
+#main-header {
+  border-radius: 5px;
+  background-color: rgb(250, 100, 41);
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.my-button {
+  background-color: rgb(197, 66, 43);
+  color: #fff;
+  border-radius: 2px;
+  padding: 10px;
+  border: none;
+}
+
+.figures {
+  display: inline-block;
+}
+
+#history-button {
+  color: #fff;
+  background-color: rgb(173, 66, 173);
+  border: none;
+}
+
+.username-block {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.username-block label {
+  display: block;
+}
+
+.figures figcaption {
+  text-align: center;
+}
